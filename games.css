@@ -1,0 +1,135 @@
+/* Basis styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+main {
+    padding-top: 100px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Games lijst styling */
+.game-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.game-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.game-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.game-item p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.game-item button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.game-item button:hover {
+    background-color: #45a049;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    position: relative; /* Verwijder de vaste positie */
+    bottom: 0;
+    margin-top: 40px; /* Voeg marge toe zodat de footer onderaan blijft zonder vast te staan */
+}
+
+/* Game Zone styling */
+.game-zone {
+    margin-top: 40px;
+    text-align: center;
+    position: relative;
+    z-index: 10;  /* Zorgt ervoor dat de knop boven andere elementen ligt */
+}
+
+#poki-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f04a3e;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    position: relative;
+    z-index: 20;  /* Zorgt ervoor dat de knop klikbaar blijft */
+}
+
+#poki-button:hover {
+    background-color: #e03932;
+}

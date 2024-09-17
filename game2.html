@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Invaders</title>
+    <link rel="stylesheet" href="game2.css">
+</head>
+<body>
+    <header>
+        <h1>Space Invaders</h1>
+        <p>Gebruik de pijltjestoetsen om je ruimteschip te bewegen en de spatiebalk om te schieten!</p>
+        <p>Tijd over: <span id="timer">60</span> seconden</p>
+        <p>Score: <span id="score">0</span></p>
+    </header>
+
+    <main>
+        <div id="game-container">
+            <canvas id="gameCanvas" width="800" height="600"></canvas>
+        </div>
+    </main>
+
+    <!-- Eindscherm met GAME OVER -->
+    <div id="end-screen" class="hidden">
+        <h1 id="game-over-message" class="game-over-text">GAME OVER</h1>
+        <p>Highscore: <span id="highscore">0</span></p>
+        <button onclick="restartGame()">Opnieuw spelen</button>
+        <button onclick="closeGame()">Stoppen</button>
+    </div>
+
+    <script src="game2.js"></script>
+</body>
+</html>

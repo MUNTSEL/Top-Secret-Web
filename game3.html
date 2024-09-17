@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racing Thunder</title>
+    <link rel="stylesheet" href="game3.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="game-area">
+            <div id="player-car"></div>
+        </div>
+        <div id="game-info">
+            <p>Score: <span id="score">0</span></p>
+            <p>Tijd: <span id="timer">0</span> seconden</p>
+        </div>
+        <div id="game-over" class="hidden">
+            <h1>GAME OVER</h1>
+            <p>Je score: <span id="final-score">0</span></p>
+            <button onclick="restartGame()">Opnieuw spelen</button>
+            <button onclick="endGame()">Stoppen</button>
+        </div>
+    </div>
+
+    <script src="game3.js"></script>
+</body>
+</html>

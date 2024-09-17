@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Secret Website - Games</title>
+    <link rel="stylesheet" href="games.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="platforms.html">Platforms</a></li>
+                <li><a href="chatmvd.html">ChatMVD</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="settings.html">Settings</a></li>
+                <li><a href="topsecret.html">Top Secret</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="games">
+            <h1>Beschikbare Games</h1>
+            <div class="game-list">
+                <!-- Games details zoals eerder -->
+                <div class="game-item">
+                    <h2>Game 1: Adventure Quest</h2>
+                    <p>Beleef een episch avontuur in een wereld vol magie en mysterie.</p>
+                    <button onclick="playGame1()">Speel</button>
+                </div>
+
+                <div class="game-item">
+                    <h2>Game 2: Space Invaders</h2>
+                    <p>Verdedig de aarde tegen een vloed van vijandige buitenaardse wezens!</p>
+                    <button onclick="playGame2()">Speel</button>
+                </div>
+
+                <div class="game-item">
+                    <h2>Game 3: Racing Thunder</h2>
+                    <p>Scheur door bochten en versla je tegenstanders in deze razendsnelle racegame.</p>
+                    <button onclick="playGame3()">Speel</button>
+                </div>
+            </div>
+
+            <!-- Poki-knop voor Game Zone -->
+            <div class="game-zone">
+                <h2>Game Zone</h2>
+                <p>Bezoek Poki voor meer gratis online games!</p>
+                <button id="poki-button" onclick="goToPoki()">Speel op Poki</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Top Secret. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script src="gamesScript.js"></script>
+</body>
+</html>

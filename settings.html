@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instellingen</title>
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="platforms.html">Platforms</a></li>
+                <li><a href="chatmvd.html">ChatMVD</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="settings.html">Instellingen</a></li>
+                <li><a href="topsecret.html">Top Secret</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="settings-section">
+            <h1>Website Instellingen</h1>
+
+            <!-- Kleurinstellingen -->
+            <div>
+                <h2>Kleur van de menubalk</h2>
+                <input type="color" id="navbar-color" name="navbar-color">
+                <button onclick="applyNavbarColor()">Pas kleur toe</button>
+            </div>
+
+            <!-- Lettertype-instellingen -->
+            <div>
+                <h2>Lettertype</h2>
+                <select id="font-family">
+                    <option value="'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Standaard</option>
+                    <option value="'Arial', sans-serif">Arial</option>
+                    <option value="'Courier New', Courier, monospace">Courier New</option>
+                    <option value="'Georgia', serif">Georgia</option>
+                </select>
+                <button onclick="applyFontFamily()">Pas lettertype toe</button>
+            </div>
+
+            <!-- Thema-instellingen -->
+            <div>
+                <h2>Thema</h2>
+                <label>
+                    <input type="radio" name="theme" value="light" checked> Licht thema
+                </label>
+                <label>
+                    <input type="radio" name="theme" value="dark"> Donker thema
+                </label>
+                <button onclick="applyTheme()">Pas thema toe</button>
+            </div>
+
+            <button onclick="resetSettings()">Reset naar standaardinstellingen</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Top Secret. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script src="settings.js"></script>
+</body>
+</html>
